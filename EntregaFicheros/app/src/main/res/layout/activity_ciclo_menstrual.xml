@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txvTextoUltimaRegla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona fecha de tu ultima regla:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+
+        <DatePicker
+            android:id="@+id/datFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="114dp"
+            android:layout_gravity="center"
+            android:calendarViewShown="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txvCiclo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciclo Menstrual:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtCiclo"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Calcular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txvPeriodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Tu periodo es:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txvDesde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Desde:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/dia1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="-"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_toRightOf="@id/txvDesde" />
+        <TextView
+            android:id="@+id/dia3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="-"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_toRightOf="@id/txvDesde"
+            android:layout_below="@id/dia1"/>
+        <TextView
+            android:id="@+id/dia2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="-"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_toRightOf="@id/txvDesde"
+            android:layout_below="@id/dia3"/>
+        <TextView
+            android:id="@+id/dia4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="-"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_toRightOf="@id/txvDesde"
+            android:layout_below="@id/dia3"/>
+        <TextView
+            android:id="@+id/txvHasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasta:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_toLeftOf="@id/dia4"
+            android:layout_alignBaseline="@id/dia4"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:id="@+id/diaFertil"/>
+
+</LinearLayout>

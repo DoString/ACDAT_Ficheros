@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    >
+
+    <!-- android:background="?android:attr/activatedBackgroundIndicator" -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACTO"
+        android:layout_alignParentTop="true"
+        android:id="@+id/Cabecera"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Nombre:"
+        android:id="@+id/Nombre"
+        android:layout_below="@id/Cabecera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:id="@+id/setNombre"
+        android:layout_below="@id/Cabecera"
+        android:layout_toRightOf="@id/Nombre"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono:"
+        android:id="@+id/Telefono"
+        android:layout_below="@id/Nombre"
+        android:layout_alignRight="@id/Nombre"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tlf"
+        android:id="@+id/setTelefono"
+        android:layout_below="@id/setNombre"
+        android:layout_toRightOf="@id/Telefono"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:id="@+id/Email"
+        android:layout_below="@id/Telefono"
+        android:layout_alignRight="@id/Nombre"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mail:"
+        android:id="@+id/setEmail"
+        android:layout_below="@id/setTelefono"
+        android:layout_toRightOf="@id/Email"
+        android:layout_marginLeft="20dp"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Cabecera"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@android:drawable/ic_delete"
+        android:id="@+id/ibtnBorrar" />
+</RelativeLayout>
+    <!--   -->

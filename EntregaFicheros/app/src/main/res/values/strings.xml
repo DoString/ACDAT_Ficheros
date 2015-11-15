@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejercicios de ficheros</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_alarma">Alarmas</string>
+    <string name="title_activity_ciclo_menstrual">CicloMenstrualActivity</string>
+    <string name="title_activity_conexion_asincrona">ConexionAsincrona</string>
+    <string name="title_activity_manejo_imagenes">ManejoImagenes</string>
+    <string name="title_activity_conversor_ftp">ConversorFTP</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label"
+        android:text="Introduce una url de imagen"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgURl"
+        android:text="http://pastebin.com/raw.php?i=3Q3swcj6"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargar"
+        android:id="@+id/btnCargar"/>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/Visor"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iant"
+            android:layout_weight="1"
+            android:text="Anterior"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isig"
+            android:layout_weight="1"
+            android:text="Siguiente"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
